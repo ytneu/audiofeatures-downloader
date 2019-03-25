@@ -5,6 +5,7 @@ This tool **makes easy creating** your personal music dataset.
 ```
 python getScrobbles.py -u 'Your last.fm username' -k 'Your api key'
 ```
+and..
 ```
 python getAudioFeatures.py -sk 'Your spotify key' -ss 'Your spotify secret'
 ```
@@ -46,8 +47,8 @@ After running this command, you will get all scrobbles saved to .csv format in t
 
 Parameters  | Description
 ---    | --- 
-Username *(required)* | The first parameter should be last.fm username. The app collects all ***recenttracks*** data more information about **getRecentTracks** [ here (https://www.last.fm/api/show/user.getRecentTracks))
-Api Key *(required)* | In order to get last.fm data, api key is required. You can easily get your own [here (https://www.last.fm/api/account/create)
+Username *(required)* | The first parameter should be last.fm username. The app collects all ***recenttracks*** data more information about **getRecentTracks** [ here] (https://www.last.fm/api/show/user.getRecentTracks)
+Api Key *(required)* | In order to get last.fm data, api key is required. You can easily get your own [here] (https://www.last.fm/api/account/create)
 
 
 
