@@ -48,7 +48,20 @@ After running this command, you will get all scrobbles saved to .csv format in t
 Parameters  | Description
 ---    | --- 
 Username *-u* *(required)* | The first parameter should be last.fm username. This script collects all scrobbles data. More information about ***used api-endpoint*** ([ here](https://www.last.fm/api/show/user.getRecentTracks))
-Api Key *-k* *(required)* | In order to get last.fm data, api key is required. You can easily get your own ([here](https://www.last.fm/api/account/create))
+Api Key *-k* *(required)* | In order to get last.fm data api key is required. You can easily get your own ([here](https://www.last.fm/api/account/create))
+
+#### Download audio features
+
+```
+python getAudioFeatures.py -sk 'Your spotify key' -ss 'Your spotify secret'
+```
+
+This script will find all tracks in spotify database based on scrobble.csv file. 
+
+Parameters  | Description
+---    | --- 
+Spotify key *-sk* *(required)* | Get your own spotify credentials ([ here](https://developer.spotify.com/dashboard/login))
+Spotify secret *-ss* *(required)* | self-explenatory
 
 
 
