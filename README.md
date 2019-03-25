@@ -43,11 +43,12 @@ pip instal -r requirements.txt
 python getScrobbles.py -u 'Your last.fm username' -k 'Your api key'
 ```
 
-After running this command, you will get all scrobbles saved to .csv format in the /folder_name/data folder.
+This script collects all last.fm data saved to .csv format in the /folder_name/data folder. 
+More information about ***used api-endpoint*** ([ here](https://www.last.fm/api/show/user.getRecentTracks)) 
 
 Parameters  | Description
 ---    | --- 
-Username *-u* *(required)* | The first parameter should be last.fm username. This script collects all scrobbles data. More information about ***used api-endpoint*** ([ here](https://www.last.fm/api/show/user.getRecentTracks))
+Username *-u* *(required)* | The first parameter should be last.fm username. 
 Api Key *-k* *(required)* | In order to get last.fm data api key is required. You can easily get your own ([here](https://www.last.fm/api/account/create))
 
 #### Download audio features
