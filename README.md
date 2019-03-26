@@ -35,6 +35,12 @@ Get the python dependecies
 pip install -r requirements.txt
 ```
 
+Create data directory
+```
+python prepare_directory.py
+```
+
+
 ### Usage
 
 #### Download scrobbles
