@@ -52,6 +52,7 @@ Parameters  | Description
 Username *-u* *(required)* | The first parameter should be last.fm username. 
 Api Key *-k* *(required)* | In order to get last.fm data api key is required. You can easily get your own ([here](https://www.last.fm/api/account/create))
 
+
 #### Download audio features
 
 ```
