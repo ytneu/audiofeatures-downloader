@@ -1,8 +1,8 @@
 # Spotify audio features downloader for data analysis projects
 
-This tool is part of data-analysis series published on medium. Check it out here ...
+This tool is part of data-analysis series published on medium. Check it out here 
 
-and create ***your own music dataset*** in few steps.
+..and create ***your own music dataset*** in few steps.
 
 ```
 python getScrobbles.py -u 'Your last.fm username' -k 'Your api key'
