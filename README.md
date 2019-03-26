@@ -5,7 +5,12 @@ This tool **makes easy creating** your personal music dataset.
 ```
 python getScrobbles.py -u 'Your last.fm username' -k 'Your api key'
 ```
-and..
+...
+
+```
+python getUris.py -sk 'Your spotify key' -ss 'Your spotify secret'
+```
+And..
 ```
 python getAudioFeatures.py -sk 'Your spotify key' -ss 'Your spotify secret'
 ```
@@ -19,6 +24,7 @@ Now your own music dataset is ready for some appealing analysis.
 * [Installation](#installation)
 * [Usage](#usage)
   * [Download scrobbles](#download-scrobbles)
+  * [Download uris](#download-uris)
   * [Download audio features](#download-audio-features)
   
 ### Pre-requirements
@@ -58,6 +64,23 @@ Parameters  | Description
 Username *-u* *(required)* | The first parameter should be last.fm username. 
 Api Key *-k* *(required)* | In order to get last.fm data api key is required. You can easily get your own ([here](https://www.last.fm/api/account/create))
 
+#### Download uris
+
+```
+python getUris.py -sk 'Your spotify key' -ss 'Your spotify secret'
+```
+
+This script collects all spotify uris and saved them to .csv format in the /folder_name/data folder. 
+
+In order to retrieve uris data we need spotify help.
+
+Get your own spotify credentials ([ here](https://developer.spotify.com/dashboard/login)). We will use its spotify-key and spotify-secret as parameters.
+
+Parameters  | Description
+---    | --- 
+Spotify key *-sk* *(required)* | self-explenatory
+Spotify secret *-ss* *(required)* | self-explenatory
+
 
 #### Download audio features
 
@@ -65,11 +88,7 @@ Api Key *-k* *(required)* | In order to get last.fm data api key is required. Yo
 python getAudioFeatures.py -sk 'Your spotify key' -ss 'Your spotify secret'
 ```
 
-This script will find all tracks in spotify database based on scrobble.csv file. 
-
-In order to retrieve audio features data we need spotify help.
-
-Get your own spotify credentials ([ here](https://developer.spotify.com/dashboard/login)). We will use its spotify-key and spotify-secret as parameters.
+This script creates audio features of each track based on uris.csv file. 
 
 Parameters  | Description
 ---    | --- 
