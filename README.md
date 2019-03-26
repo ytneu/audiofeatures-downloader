@@ -44,6 +44,7 @@ python getScrobbles.py -u 'Your last.fm username' -k 'Your api key'
 ```
 
 This script collects all last.fm data saved to .csv format in the /folder_name/data folder. 
+
 More information about ***used api-endpoint*** ([ here](https://www.last.fm/api/show/user.getRecentTracks)) 
 
 Parameters  | Description
