@@ -32,7 +32,7 @@ Git clone the project
 Get the python dependecies
 
 ```
-pip instal -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Usage
