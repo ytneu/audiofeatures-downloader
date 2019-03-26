@@ -59,8 +59,11 @@ Api Key *-k* *(required)* | In order to get last.fm data api key is required. Yo
 python getAudioFeatures.py -sk 'Your spotify key' -ss 'Your spotify secret'
 ```
 
-Get your own spotify credentials ([ here](https://developer.spotify.com/dashboard/login))
 This script will find all tracks in spotify database based on scrobble.csv file. 
+
+In order to retrieve audio features data we need spotify help.
+
+Get your own spotify credentials ([ here](https://developer.spotify.com/dashboard/login)). We will use its spotify-key and spotify-secret as parameters.
 
 Parameters  | Description
 ---    | --- 
