@@ -2,6 +2,5 @@ requests
 asyncio
 pandas
 aiohttp
-glob
 asgiref
 spotipy
