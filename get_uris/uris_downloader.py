@@ -86,8 +86,8 @@ class Uris:
 
     def _get_data_from_file(self):
         df = pd.read_csv(DATA_PATH + '/scrobbles.csv')
-        artist_names = df['artist'].to_list()
-        track_names = df['track'].to_list()
+        artist_names = df['artist'].values.tolist()
+        track_names = df['track'].values.tolist()
         return artist_names, track_names
 
 
