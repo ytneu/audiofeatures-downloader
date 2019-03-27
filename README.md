@@ -94,8 +94,8 @@ This script creates audio features of each track based on uris.csv file.
 
 Parameters  | Description
 ---    | --- 
-Spotify key *-sk* *(required)* | self-explenatory
-Spotify secret *-ss* *(required)* | self-explenatory
+Spotify key *-sk* *(required)* | self-explanatory
+Spotify secret *-ss* *(required)* | self-explanatory
 
 
 
