@@ -95,7 +95,7 @@ class AudioFeatures:
 
     def _get_uris_list(self):
         df = pd.read_csv(DATA_PATH + '/uris.csv')
-        return df['uri'].to_list()
+        return df['uri'].values.tolist()
 
 
     def _create_patches(self, data):
