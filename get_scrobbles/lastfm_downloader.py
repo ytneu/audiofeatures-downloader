@@ -53,6 +53,7 @@ class LastfmDownloader:
 
     def _get_urls(self):
         total_pages = self._get_total_pages()
+        
         url = LASTFM_BASE_URL.format(self.username, self.key)
         urls = [url + '&page={}&format=json'.format(page) for page in range(1, total_pages)]
         return urls
@@ -62,16 +63,24 @@ class LastfmDownloader:
         path = DATA_PATH + '/scrobbles.csv'
         artist_names = []
         track_names = []
+        timestamp = []
 
         for response in responses:
             scrobbles = response
             for scrobble in scrobbles['recenttracks']['track']:
                 artist_names.append(scrobble['artist']['#text'])
                 track_names.append(scrobble['name'])
+                try:
+                    timestamp.append(scrobble['date']['uts'])
+                except:
+                    timestamp.append('NaN')
+                    
 
         df = pd.DataFrame()
         df['artist'] = artist_names
         df['track'] = track_names
+        df['timestamp'] = timestamp
 
-        df.drop_duplicates().to_csv(path, index=None, encoding='utf-8')
+        # df.drop_duplicates().to_csv(path, index=None, encoding='utf-8')
+        df.to_csv(path, index=None, encoding='utf-8')
         print('saved')
