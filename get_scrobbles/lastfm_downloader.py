@@ -60,7 +60,8 @@ class LastfmDownloader:
 
 
     def _save_scrobbles(self, responses):
-        path = DATA_PATH + '/scrobbles.csv'
+        path_scrobbles = DATA_PATH + '/scrobbles.csv'
+	path_all_scrobbles = DATA_PATH + '/all_scrobbles.csv'
         artist_names = []
         track_names = []
         timestamp = []
@@ -80,7 +81,8 @@ class LastfmDownloader:
         df['artist'] = artist_names
         df['track'] = track_names
         df['timestamp'] = timestamp
-
-        # df.drop_duplicates().to_csv(path, index=None, encoding='utf-8')
-        df.to_csv(path, index=None, encoding='utf-8')
+	
+	df.to_csv(path_all_scrobbles, index=None, encoding='utf-8')
+        df.drop_duplicates().to_csv(path_scrobbles, index=None, encoding='utf-8')
+        
         print('saved')
